@@ -1,13 +1,16 @@
 // TODO: What is `this` referring to here?
+// [This] is referring to window.
 console.log(this);
 
 // TODO: What is `this` referring to here?
+// [This] is referring to object window.
 function helloThis() {
   console.log('Inside this function, this is ' + this);
 }
 helloThis();
 
 // TODO: What is `this` referring to here? What will be logged in the console?
+// [This] is referring to use the object.
 var child = {
   age: 10,
   name:"mgmg",
@@ -19,6 +22,7 @@ this.child
 this.child.ageTenYears
 
 // TODO: What is `this` referring to here? What will be logged in the console?
+// [This] is referrint to use the object.
 var investor ={
   name: 'Cash Saver',
   investment: {
@@ -35,26 +39,7 @@ investor.investment.investmentGrowth();
 
 
 // TODO: Call the `helloThis` function and the object methods to check results in the console
-var a = window.prompt("Avalue");
-var b = window.prompt("Bvalue");
-console.log(a+b);
-
-var a = parseInt(window.prompt("Avalue"));
-var b = parseInt(window.prompt("Bvalue"));
-console.log(a-b);
-
-
-
-alert("Where you go?");
-var choose = function(){
-  var question = prompt("left or right");
-  if(question == "right"){
-    alert("You have chosen right");
-  }else if(question == "left"){
-    alert("You have chosen left");
-  }else("You don't chosen");
-}
-choose();
+this.helloThis();
 
 
 
